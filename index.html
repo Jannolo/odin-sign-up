@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-up Page</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left-side">
+            <img src="img/odin-lined.png" alt="Wing Logo of this mystery">
+            <h1>Mystery Sign-Up</h1>
+        </div>
+        <div class="right-side">
+            <h1>This is my sign-up form to mystery!</h1>
+            <p>We both know you really want to sign-up! So why wait? <br> Just go for it!</p>
+
+            <h2>Let's do it!</h2>
+
+            <form action="" method="post">
+                <label for="first">First Name:</label>
+                <label for="last">Last Name:</label>
+                <input type="text" name="first" id="first">
+                <input type="text" name="last" id="last">
+
+                <label for="email">Email:*</label>
+                <label for="phone">Phone Number:</label>
+                <input type="email" name="email" id="email" required>
+                <input type="tel" pattern="[0-9]{12}" name="phone" id="phone">
+
+                <label for="password">Password:*</label>
+                <label for="password2">Repeat Password:*</label>
+                <input type="password" name="password" id="password"required>
+                <input type="password" name="password2" id="password2" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
