@@ -16,6 +16,10 @@ p, input, button {
     font-size: 20px;
 }
 
+a {
+    color: white;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -42,13 +46,15 @@ p, input, button {
     gap: 3em;
     padding-left: 20px;
     padding-right: 20px;
+    color: white;
     
 }
 
 .right-side > form {
+    width: fit-content;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1em;
+    grid-column-gap: 3em;
     grid-row-gap: 0.5em;
 
     
@@ -56,11 +62,14 @@ p, input, button {
 
 .right-side > form > input {
    border-radius: 5px;
+   
 }
 
 .right-side > form > button {
-    background-color: olivedrab;
+    background-color: #596D48;
     height: 50px;
     margin-top: 10px;
     border-radius: 10px;
+    color: white;
+    
 }
