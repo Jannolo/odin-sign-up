@@ -67,8 +67,13 @@ a {
 }
 
 .right-side > form > input {
+   border: lightgreen solid 1px;
    border-radius: 5px;
    
+}
+
+.right-side > form > input:invalid:not(:placeholder-shown) {
+    border: red solid 3px;
 }
 
 .right-side > form > button {
