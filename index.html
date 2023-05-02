@@ -13,8 +13,10 @@
 <body>
     <div class="wrapper">
         <div class="left-side">
+            <div class="background-wrapper">
             <img src="img/odin-lined.png" alt="Wing Logo of this mystery">
             <h1>Mystery Sign-Up</h1>
+        </div>
         </div>
         <div class="right-side">
             <h1>This is my sign-up form to mystery!</h1>
@@ -22,11 +24,11 @@
 
             <h2>Let's do it!</h2>
 
-            <form action="" method="post" onsubmit="return validateForm()">
+            <form action="" method="post" onsubmit="return validatePassword()">
                 <label for="first">First Name:</label>
                 <label for="last">Last Name:</label>
-                <input type="text" name="first" id="first">
-                <input type="text" name="last" id="last">
+                <input type="text" name="first" id="first" pattern="[^0-9]" title="No numbers in your first name please!">
+                <input type="text" name="last" id="last" pattern="[^0-9]" title="No numbers in your last name please!">
 
                 <label for="email">Email:*</label>
                 <label for="phone">Phone Number:</label>
@@ -35,7 +37,7 @@
 
                 <label for="password">Password:*</label>
                 <label for="password2">Repeat Password:*</label>
-                <input type="password" name="password" id="password" required>
+                <input type="password" name="password" id="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
                 <input type="password" name="password2" id="password2" required>
 
                 <button type="submit">Create Account</button>
