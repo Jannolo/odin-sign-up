@@ -60,19 +60,20 @@ a {
     width: fit-content;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-column-gap: 3em;
     grid-row-gap: 0.5em;
 
     
 }
 
-.right-side > form > input {
+.right-side > form > div > input {
    border: lightgreen solid 1px;
    border-radius: 5px;
    
 }
 
-.right-side > form > input:invalid:not(:placeholder-shown) {
+.right-side > form > div > input:invalid:not(:placeholder-shown) {
     border: red solid 3px;
 }
 
@@ -83,4 +84,14 @@ a {
     border-radius: 10px;
     color: white;
     
+}
+
+.right-side > form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side > form > div > :last-child {
+    color: red;
+    font-size: small;
 }
