@@ -68,13 +68,15 @@ a {
 }
 
 .right-side > form > div > input {
-   border: lightgreen solid 1px;
+   border: lightgray solid 1px;
    border-radius: 5px;
+
+   height: 20px;
    
 }
 
 .right-side > form > div > input:invalid:not(:placeholder-shown) {
-    border: red solid 3px;
+    border: red solid 1px;
 }
 
 .right-side > form > button {
@@ -89,9 +91,11 @@ a {
 .right-side > form > div {
     display: flex;
     flex-direction: column;
+    height: 3em;
 }
 
 .right-side > form > div > :last-child {
     color: red;
     font-size: small;
+    max-width: ;
 }

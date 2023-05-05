@@ -3,7 +3,10 @@
 // submitButton.addEventListener('click', validatePassword(firstPwField, secondPwField));
 
 function validatePassword() {
-        if (document.getElementById('password').value != document.getElementById('password2').value) {
+        
+    if (document.getElementById('password').validity.patternMismatch) {
+        document.querySelector(".error-password").textContent = "Enter a stronger password.";
+        } else if (document.getElementById('password').value != document.getElementById('password2').value) {
             document.querySelector(".error-password").textContent = "The passwords don't match";
         } else {
             document.querySelector(".error-password").textContent = "";
@@ -30,7 +33,7 @@ function validatePhone() {
     const phoneErrorMessage = document.querySelector(".error-phone");
     console.log("Im here");
     if (phoneInput.validity.patternMismatch) {
-        phoneErrorMessage.textContent = "Please enter a phone number with exactly 12 digits!";
+        phoneErrorMessage.textContent = "Please enter a valid number.";
     } else {
         phoneErrorMessage.textContent = "";
     }
